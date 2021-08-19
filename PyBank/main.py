@@ -30,11 +30,6 @@ with open(csvpath) as csvfile:
     csv_header = next(csvreader)
     print(f"CSV Header: {csv_header}")
     
-    jan_data = next(csvreader)
-    total_months = total_months + 1
-    total_net = total_net + int(jan_data[1])
-    last_net = int(jan_data[1])
-
 
     # Read each row of data after the header
     for row in csvreader:
